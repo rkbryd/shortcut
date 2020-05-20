@@ -1,0 +1,55 @@
+///#pragma GCC optimize("Ofast")
+///#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
+///#pragma GCC optimize("unroll-loops")
+
+#include<bits/stdc++.h>
+///#include<ext/pb_ds/assoc_container.hpp>
+///#include<ext/pb_ds/tree_policy.hpp>
+using namespace std;
+///using namespace __gnu_pbds;
+///template<typename T> using orderset = tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>;
+
+typedef long long ll;
+typedef vector<int> vii;
+typedef vector<ll> vll;
+typedef vector<vll> vvll;
+typedef vector<vii> vvii;
+typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
+typedef vector<pii> vpii;
+typedef vector<pll> vpll;
+typedef vector<bool> vbb;
+
+const ll N = 100001;
+const ll MOD = 1000000007;
+const ll INF = LLONG_MAX;
+
+#define all(a) a.begin(),a.end()
+#define rall(a) a.rbegin(),a.rend()
+#define rev(a) reverse(all(a))
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define yes cout<<"YES"<<nl
+#define no cout<<"NO"<<nl
+#define space ' '
+#define nl '\n'
+#define PI acos(-1)
+#define Case(x) cout<<"Case "<<x<<": "
+#define strtoint(a) atoi(a.c_str())
+
+#define coutv(v) for(auto it:v)cout<<it<<space;cout<<nl;
+#define cinv(v) for(auto &it:v)cin>>it;
+
+int main()
+{
+    ios_base::sync_with_stdio(false),cin.tie(NULL);
+    ///cout<<fixed<<setprecision(10);
+    int tc=1,cs=0;
+    //cin>>tc;
+    while(tc--)
+    {
+
+    }
+}
