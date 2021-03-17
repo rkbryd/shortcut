@@ -1,4 +1,4 @@
-bb mark(N);
+vbb mark(N);
 vii p;
 
 void seive()
