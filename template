@@ -40,6 +40,7 @@ const ll INF = 1122334455667788990;
 #define all(a) a.begin(),a.end()
 #define rall(a) a.rbegin(),a.rend()
 #define rev(a) reverse(all(a))
+#define sz(x) int((x).size())
 #define eb emplace_back
 #define pb push_back
 #define mp make_pair
