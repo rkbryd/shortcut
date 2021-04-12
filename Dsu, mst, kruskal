@@ -78,13 +78,13 @@ const ll INF = 1122334455667788990;
 ///const int dy[] = {-1,+1,-2,+2,-2,+2,-1,+1}; ///knight's Move
 ///*.....................-_-........................*///
 
-vii par(N);
+vll par(N);
 
 struct node
 {
-    int u,v,w;
+    ll u,v,w;
     node();
-    node(int _u,int _v,int _w)
+    node(ll _u,ll _v,ll _w)
     {
         u=_u;
         v=_v;
@@ -97,14 +97,14 @@ struct node
     }
 };
 
-vector<node>v;
+vector<node>e;
 
-void makepar(int n)
+void makepar(ll n)
 {
-    for(int i=0; i<=n; i++)
+    for(ll i=0; i<=n; i++)
         par[i]=i;
 }
-int Find(int r)
+ll Find(ll r)
 {
     if(r==par[r])
         return r;
@@ -112,13 +112,13 @@ int Find(int r)
 }
 ll mst()
 {
-    sort(all(v));
-    int tot=0;
-    for(int i=0; i<v.size(); i++)
+    sort(all(e));
+    ll tot=0;
+    for(ll i=0; i<e.size(); i++)
     {
-        int a=v[i].u,b=v[i].v,c=v[i].w;
-        int x=Find(a);
-        int y=Find(b);
+        ll a=e[i].u,b=e[i].v,c=e[i].w;
+        ll x=Find(a);
+        ll y=Find(b);
         if(x==y)
             continue;
         par[x]=y;
@@ -134,16 +134,16 @@ int main()
     cin>>tc;
     while(tc--)
     {
-        int n,m;
+        ll n,m;
         cin>>n>>m;
         for(int i=0; i<m; i++)
         {
             int a,b,c;
             cin>>a>>b>>c;
-            v.pb(node(a,b,c));
+            e.pb(node(a,b,c));
         }
         makepar(n);
         cout<<mst()<<nl;
-        v.clear();
+        e.clear();
     }
 }
